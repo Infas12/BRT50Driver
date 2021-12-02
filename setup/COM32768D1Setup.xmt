@@ -1,0 +1,16 @@
+; C:\Users\ROMA_PC_4\Desktop\COM32768D1Setup.xmt
+;   CAN messages saved by PCAN-View v4.3.4.615
+;
+; Columns descriptions:
+; ~~~~~~~~~~~~~~~~~~~~~
+; +Message ID
+; |            +Cycle time in ms (0=manual)
+; |            |  +Data length
+; |            |  |  +Frame type
+; |            |  |  |  +Message data
+; |            |  |  |  |
+001h       1000000  4  D 04h 01h 06h 00h  Paused ; Set current position as zero
+001h       1000000  4  D 04h 01h 04h AAh  Paused ; Switch to auto feedback mode
+001h       1000000  4  D 04h 01h 04h 00h  Paused ; Switch to polling mode
+001h       1000000  4  D 04h 01h 03h 01h  Paused ; Set Baudrate
+001h          10  4  D 04h 01h 01h 00h  Paused ; Poll for feedback
